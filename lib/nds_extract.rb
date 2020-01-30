@@ -21,7 +21,7 @@ def flatten_a_o_a(aoa)
 end
 
 def movie_with_director_name(director_name, movie_data)
-  { 
+  {
     :title => movie_data[:title],
     :worldwide_gross => movie_data[:worldwide_gross],
     :release_year => movie_data[:release_year],
@@ -71,7 +71,7 @@ def movies_with_directors_set(source)
   # INPUT:
   # * source: An Array of Hashes containing director information including
   # :name and :movies
-  #
+  return!
   # RETURN:
   #
   # Array of Arrays containing all of a director's movies. Each movie will need
